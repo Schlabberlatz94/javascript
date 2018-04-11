@@ -30,5 +30,53 @@ console.log("über 18?", isOver18);
 let age = 17;
 console.log("age über 18", age > 18);
 
+let zahlenListe = [2, 11, 24, 33];
+console.log(zahlenListe);
+let namensListe = [ "Jane", "John"];
+console.log(namensListe[1]);
+console.log("Anzahl der Namen: ", namensListe.length);
+
+let benutzer = {
+    vorname: "Jane",
+    nachname: "Doe",
+    alter: 28
+};
+console.log("Benutzer: ", benutzer.alter);
+benutzer.bestzeit = 200;
+console.log(benutzer);
+benutzer["bestzet ever"] = 100;
+console.log(benutzer);
+
+
+// Benutzer Eingabe
+// let alter = prompt("Wie alt bist du?");
+// console.log("Du bist ", alter, "Jahre alt");
+// console.log("Über 18?", alter > 18);
+// if (alter > 18) {
+//     console.log("Du darfst hinein...");
+// } else {
+//     console.log("noch nicht 18...");
+// }
+
+for (let i=1; i<=10; i++) {
+    console.log("Wert von i:", i);
+}
+
+function showAge(birthYear) {
+    let age = 2018 - birthYear;
+    console.log("Du bist ", age, "Jahre alt")
+}
+
+showAge(1964);
+showAge(1988);
+
+function calcAge(birthYear) {
+    return 2018 - birthYear;
+}
+
+console.log("Du bist ", calcAge(1990), "Jahre");
+console.log("und du ", calcAge(1994), ".");
+
+
 
 
